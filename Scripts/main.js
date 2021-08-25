@@ -4,7 +4,6 @@
 
 randomNumber = Math.floor(Math.random()*3) + 1;
 
-
 //-- in the same function if one then return string 'rock', if two then 'paper', if three then 'scissor'
 
 if (randomNumber === 1) {
@@ -15,7 +14,7 @@ if (randomNumber === 1) {
         computerSelection = 'Scissors';
 }
 
-
+console.log(computerSelection);
 
 //-- call function and asign to variable
 
@@ -25,9 +24,14 @@ if (randomNumber === 1) {
 
 let userSelection = prompt('じゃんけんぽん!!', '');
 
+//change userSelection to lowercase
+
+userSelection = userSelection.toLowerCase();
+console.log(userSelection);
+
 //conditinal determines who won, computer or user then console logs string congratulating or commiserating
 
-if ((userSelection === 'Rock' && computerSelection === 'Scissors') || (userSelection === 'Scissors' && computerSelection === 'Paper') || (userSelection === 'Paper' && computerSelection === 'Rock')) {
+if ((userSelection === 'rock' && computerSelection === 'Scissors') || (userSelection === 'scissors' && computerSelection === 'Paper') || (userSelection === 'paper' && computerSelection === 'Rock')) {
     console.log('The battle was long but your brains and might prevailed. You won!');
 } else {
     console.log('ROFL, Loser!');
