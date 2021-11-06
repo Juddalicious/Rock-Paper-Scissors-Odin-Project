@@ -63,7 +63,7 @@ userSelection = userSelection.toLowerCase();
 
 
 //conditinal determines who won, computer or user then console logs string congratulating or commiserating
-if ((userSelection === 'rock' && computerSelection === 'Scissors') || (userSelection === 'scissors' && computerSelection === 'Paper') || (userSelection === 'paper' && computerSelection === 'Rock')) {
+if ((userSelection === 'rock' && computerSelection === 'scissors') || (userSelection === 'scissors' && computerSelection === 'paper') || (userSelection === 'paper' && computerSelection === 'rock')) {
 alert('The battle was long but your brains and might prevailed. You won!');
 } else if (userSelection === computerSelection) {
     playDraw(); 
