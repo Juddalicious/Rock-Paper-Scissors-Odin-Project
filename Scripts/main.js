@@ -38,7 +38,6 @@ alert('ROFL, Loser!');
 playRound();
 }
 
-
 //function to run if there's a draw
 function playDraw() {
 
@@ -60,7 +59,6 @@ let userSelection = prompt("It was a draw let\'s go again big shlong! I got this
 
 //change userSelection to lowercase
 userSelection = userSelection.toLowerCase();
-
 
 //conditinal determines who won, computer or user then console logs string congratulating or commiserating
 if ((userSelection === 'rock' && computerSelection === 'scissors') || (userSelection === 'scissors' && computerSelection === 'paper') || (userSelection === 'paper' && computerSelection === 'rock')) {
